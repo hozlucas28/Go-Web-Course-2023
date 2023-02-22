@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Inicio</title>
+	</head>
+	<body>
+		<!-- Herencia -->
+		{{ template "header" }}
+		<hr />
+
+		<!-- Creo Variables -->
+		{{ with $myVar := "Valor de mi variable" }}
+			<p>{{ $myVar }}</p>
+		{{ end }}
+		
+		<!-- Obtengo Datos -->
+		<h2>¡Hola {{ .Name }}!</h2>
+		<h2>Edad: {{ .Age }}</h2>
+		<hr />
+	
+		<h1>Usuario</h1>
+
+		<!--
+			Operadores Lógicos:
+			- not == !
+			- and == &&
+			- or == ||
+		-->
+		{{ if not .Active }}
+			<p>Usuario no activo.</p>
+		{{ else }}
+			<p>Usuario activo.</p>
+		{{ end }}
+
+		{{ if (and .Active .IsAdmin) }}
+			<p>El usuario es administrador y esta activo.</p>
+		{{ else }}
+			<p>El usuario no es administrador y/o no esta activo.</p>
+		{{ end }}
+
+		{{ if (or .Active .IsAdmin) }}
+			<p>El usuario esta activo o es administrador.</p>
+		{{ end }}
+
+		<!--
+			Operadores Condicionales:
+			- eq == ==
+			- ne == !=
+			- lt == <
+			- le == <=
+			- gt == >
+			- ge == >=
+		-->
+		{{ if eq .Age 18 }}
+			<p>El usuario tiene 18 años.</p>
+		{{ end }}
+
+		{{ if gt .Age 18 }}
+			<p>El usuario tiene más de 18 años.</p>
+		{{ end }}
+
+		{{ if lt .Age 18 }}
+			<p>El usuario tiene menos de 18 años.</p>
+		{{ end }}
+		<hr />
+
+		<!-- Iteración -->
+		<ul>
+			{{ range .Courses }}
+				<li>{{ .Name }}</li>
+			{{ end }}
+		</ul>
+		<hr />
+
+		<!-- Herencia -->
+		{{ template "footer" }}
+	</body>
+</html>
