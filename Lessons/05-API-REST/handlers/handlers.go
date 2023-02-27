@@ -9,7 +9,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-// Obtener todos los usuarios
+// Devolver todos los usuarios
 func GetUsers(rw http.ResponseWriter, r *http.Request) {
 	/* ---------------------------------- Viejo --------------------------------- */
 
@@ -53,7 +53,7 @@ func GetUsers(rw http.ResponseWriter, r *http.Request) {
 	}
 }
 
-// Obtener usuario especifico
+// Devolver usuario especifico
 func GetUser(rw http.ResponseWriter, r *http.Request) {
 	/* ---------------------------------- Viejo --------------------------------- */
 

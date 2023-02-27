@@ -13,8 +13,8 @@ func main() {
 	mux := mux.NewRouter()
 
 	// EndPoints
-	mux.HandleFunc("/api/user/", handlers.GetUsers).Methods("GET")                 // Obtener todos los usuarios.
-	mux.HandleFunc("/api/user/{id:[0-9]+}", handlers.GetUser).Methods("GET")       // Obtener usuario especifico.
+	mux.HandleFunc("/api/user/", handlers.GetUsers).Methods("GET")                 // Devolver todos los usuarios.
+	mux.HandleFunc("/api/user/{id:[0-9]+}", handlers.GetUser).Methods("GET")       // Devolver usuario especifico.
 	mux.HandleFunc("/api/user/", handlers.CreateUser).Methods("POST")              // Registrar usuario.
 	mux.HandleFunc("/api/user/{id:[0-9]+}", handlers.UpdateUser).Methods("PUT")    // Eliminar usuario.
 	mux.HandleFunc("/api/user/{id:[0-9]+}", handlers.DeleteUser).Methods("DELETE") // Editar usuario.
