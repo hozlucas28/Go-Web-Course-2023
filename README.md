@@ -30,7 +30,7 @@
     Installation
 </h2>
 <p>
-    Clone the repository, install <a href="https://go.dev/doc/install" target="_blank">Go</a> and use <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> (code editor) with <a href="https://marketplace.visualstudio.com/items?itemName=golang.Go" target="_blank">Go</a> (extension) installed. Thats all! If you want to test a Go file write <code>go run &lt;FILE NAME&gt;</code> in a terminal, and you are going to see a result in your terminal.
+    Clone the repository, install <a href="https://go.dev/doc/install" target="_blank">Go</a> and use <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> (code editor) with <a href="https://marketplace.visualstudio.com/items?itemName=golang.Go" target="_blank">Go</a> (extension) installed. That's all! If you want to test a Go file write <code>go run &lt;FILE NAME&gt;</code> in a terminal, and you are going to see a result in your terminal.
 </p>
 
 <p>
@@ -68,6 +68,9 @@
         </li>
         <li>
             <a href="https://github.com/hozlucas28/Go-Module-Practice-2023" target="_blank">Repository of Go module practice</a>
+        </li>
+        <li>
+            <a href="https://github.com/hozlucas28/Java-Course-2023" target="_blank">Repository of Java course</a>
         </li>
         <li>
             <a href="https://github.com/hozlucas28/API-Rest-Express-Course-2022" target="_blank">Repository of API REST - Express course</a>
