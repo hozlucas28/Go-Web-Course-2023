@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/88015479/216840486-136437b4-1608-4fe0-908f-a1d071c59fe4.png" width="500">
+    <img src="./.github/go-logo.png" width="500">
 </p>
 
 <h2>
